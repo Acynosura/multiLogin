@@ -7,6 +7,10 @@ android {
     namespace = "com.example.multilogin"
     compileSdk = 33
 
+    buildFeatures{
+        viewBinding = true
+    }
+
     defaultConfig {
         applicationId = "com.example.multilogin"
         minSdk = 28

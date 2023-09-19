@@ -14,4 +14,6 @@
     <color name="blue">#525BFF</color>
     <color name="abu">#EDEDED</color>
     <color name="abutua">#a9a9a9</color>
+    <color name="myPrimary">#334AD6</color>
+    <color name="mySecondary">#2E45C6</color>
 </resources>

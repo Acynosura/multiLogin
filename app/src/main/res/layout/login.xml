@@ -1,9 +1,255 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/btry"
     tools:context=".SecondActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.7"
+        android:background="@color/myPrimary"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:alpha="0.2"/>
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/ptih"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/card1"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="-20dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:alpha="0.7"
+                    android:drawableStart="@drawable/mail"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:paddingTop="10dp"
+                    android:text="Username"
+                    android:textColor="@color/myPrimary"
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:id="@+id/username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:alpha="0.7"
+                    android:drawableEnd="@drawable/baseline_done_24"
+                    android:drawablePadding="5dp"
+                    android:drawableTint="@color/myPrimary"
+                    android:hint="Input your username"
+                    android:inputType="text" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:alpha="0.7"
+                    android:drawableStart="@drawable/lock"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Password"
+                    android:textColor="@color/myPrimary"
+                    android:textSize="18dp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:alpha="0.1"
+                    android:background="@color/black" />
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:alpha="0.7"
+                    android:drawableEnd="@drawable/eye"
+                    android:drawablePadding="5dp"
+                    android:drawableTint="@color/myPrimary"
+                    android:hint="Input your password here"
+                    android:inputType="textPassword" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:alpha="1"
+                        android:buttonTint="@color/myPrimary"
+                        android:foregroundTint="@color/mySecondary"
+                        android:text="Remember Me"
+                        android:textColor="@color/myPrimary" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:alpha="1"
+                        android:text="forgor my password"
+                        android:textColor="@color/myPrimary"
+                        android:textStyle="italic" />
+                </RelativeLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/confirmLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:backgroundTint="@color/myPrimary"
+                    android:fontFamily="sans-serif-medium"
+                    android:paddingVertical="10dp"
+                    android:text="Login"
+                    android:textSize="20dp"
+                    app:cornerRadius="32dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="80dp"
+                        android:layout_height="2dp"
+                        android:layout_gravity="center"
+                        android:background="@color/myPrimary" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:text="OR"
+                        android:textColor="@color/myPrimary" />
+
+                    <View
+                        android:layout_width="80dp"
+                        android:layout_height="2dp"
+                        android:layout_gravity="center"
+                        android:background="@color/myPrimary" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    android:paddingBottom="20dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border"
+                        android:clickable="true"
+                        android:padding="9dp">
+
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/google" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="Google"
+                            android:textColor="@color/myPrimary"
+                            android:textSize="16dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/border"
+                        android:clickable="true"
+                        android:padding="9dp">
+
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/ugm" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="SSO UGM"
+                            android:textColor="@color/myPrimary"
+                            android:textSize="16dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/circle"
+        android:layout_alignTop="@+id/card1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-50dp"
+        />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/trina"
+        android:layout_alignTop="@+id/card1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-50dp"
+        />
+
+
+
+
+</RelativeLayout>
